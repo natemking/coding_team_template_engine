@@ -1,7 +1,7 @@
 # Coding Team Template Engine
 Homework #10 OOP: Template Engine - Employee Summary
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/natemking/coding_team_template_engine/blob/main/LICENSE)
 
 ![html badge](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
 ![css badge](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)
@@ -21,13 +21,13 @@ http://www.natemking.dev/
   * [Credits](#credits)
 
 ## Description
----
+
 ### Scope of Work
 
 ### HTML and CSS
 
 ### Node.js Functionality
----
+
 
 ## Screenshots
 
@@ -46,7 +46,8 @@ _weather dashboard mobile aspect ratio_
 <br> -->
 
 
----
+## License
+Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 <!-- 
