@@ -1,7 +1,7 @@
 {
-  "name": "unit10hw",
+  "name": "coding_team_template_engine",
   "version": "1.0.0",
-  "description": "OOP and testing for week 10 homework",
+  "description": "Homework #10 OOP: Template Engine - Employee Summary",
   "main": "app.js",
   "directories": {
     "lib": "lib",
@@ -24,6 +24,6 @@
     "inquirer": "^6.3.1"
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   }
 }
