@@ -51,9 +51,9 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
 <!-- 
-* [jQuery](https://jquery.com/)
+* [JavaScript inheritance and the Prototype chain](https://ui.dev/javascript-inheritance-and-the-prototype-chain/)
 
-* [GeoCod API from Nominatim](https://nominatim.org/)
+* [Babel plugin proposal class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
 
 * [Weather API from OpenWeatherMap](https://openweathermap.org/)
 

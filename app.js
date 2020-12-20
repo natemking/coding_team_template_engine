@@ -9,11 +9,74 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
-const { default: Employee } = require("./lib/Employee").default;
+const Employee = require("./lib/Employee");
 
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+
+ 
+
+const questions = (employee, alt1, alt2) => [ 
+    {
+        type: 'input',
+        name: 'name',
+        message: `What is your ${employee}'s name?`,
+    },
+    {
+        type: 'input',
+        name: 'id',
+        message: `What is your ${employee}'s ID number?`,
+        validate: (value) => value.match(/^\d*$/) ? true : 'Please enter a number'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: `What is your ${employee}'s email?`,
+        validate: (value) => value.match(
+            /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        ) ? true : 'Please enter a valid email address'
+    },
+    {
+        type: 'input',
+        name: `${alt1}`,
+        message: `What is your ${employee}'s ${alt2}?`,
+    },
+    {
+        type: 'list',
+        name: 'others',
+        message: 'Which team member role would you like to add?',
+        choices: ['Engineer', 'Intern', `I'm done`]
+    },
+]
+
+const init = async (employee, alt1, alt2) => {
+    try{
+        let data = await inquirer.prompt(questions(employee, alt1, alt2));
+    
+       switch (data.others) {
+           case 'Engineer':
+            alt1 = 'github';
+            alt2 = 'GitHub';
+               break;
+            case 'Intern':
+            alt1 = alt2 ='school';
+                break;
+           default:
+               break;
+       }
+       
+        //Update employee variable & recursive loop
+        data.others !== `I'm done` ? (employee = data.others, init(employee, alt1, alt2)) : null;
+           
+
+    }catch(err){
+        console.log(err);
+    }
+}
+
+init('Manager', 'officeNumber', 'office number');
+
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
@@ -34,8 +97,3 @@ const { default: Employee } = require("./lib/Employee").default;
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
-
-const test = new Employee('bob', 'intern', 'bob@job.com');
-
-
-console.log(test);
