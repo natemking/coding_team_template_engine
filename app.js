@@ -10,13 +10,8 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 const Employee = require("./lib/Employee");
-
-
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
-
  
-
+//Function for inquirer questions
 const questions = (employee, alt1, alt2) => [ 
     {
         type: 'input',
@@ -33,9 +28,7 @@ const questions = (employee, alt1, alt2) => [
         type: 'input',
         name: 'email',
         message: `What is your ${employee}'s email?`,
-        validate: (value) => value.match(
-            /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-        ) ? true : 'Please enter a valid email address'
+        validate: (value) => value.match(/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/) ? true : 'Please enter a valid email address'
     },
     {
         type: 'input',
@@ -50,25 +43,42 @@ const questions = (employee, alt1, alt2) => [
     },
 ]
 
+
+const employees = [];
+//Initialization function 
 const init = async (employee, alt1, alt2) => {
     try{
         let data = await inquirer.prompt(questions(employee, alt1, alt2));
-    
-       switch (data.others) {
-           case 'Engineer':
+        
+        if (employee === 'Manager'){
+            let bob = new Manager(data.name, data.id, data.email, data[alt1])
+            employees.push(bob)
+        }
+        if (employee === 'Engineer'){
+            let mike = new Engineer(data.name, data.id, data.email, data[alt1])
+            employees.push(mike)
+        }
+        if (employee === 'Intern'){
+            let steve = new Intern(data.name, data.id, data.email, data[alt1])
+            employees.push(steve)
+        }
+        
+        //change words in questions depending on what role is selected
+        switch (data.others) {
+            case 'Engineer':
             alt1 = 'github';
-            alt2 = 'GitHub';
-               break;
+            alt2 = 'GitHub username';
+                break;
             case 'Intern':
             alt1 = alt2 ='school';
                 break;
-           default:
-               break;
-       }
+            default:
+                break;
+        }
        
         //Update employee variable & recursive loop
-        data.others !== `I'm done` ? (employee = data.others, init(employee, alt1, alt2)) : null;
-           
+        data.others !== `I'm done` ? (employee = data.others, init(employee, alt1, alt2)) : nullgit ;
+        
 
     }catch(err){
         console.log(err);
