@@ -3,11 +3,10 @@ body{
     font-family: 'Rajdhani', sans-serif;
 }
 
-
 h1 {
     font-family: 'Marcellus SC', serif;
 }
 
-.jumbotron {
-    width: 80%;
+.employee-card{
+    margin: 10px;
 }
