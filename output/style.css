@@ -1,6 +1,7 @@
 
 body{
     font-family: 'Rajdhani', sans-serif;
+    background-color: rgb(234, 234, 227);
 }
 
 h1 {
@@ -9,4 +10,15 @@ h1 {
 
 .employee-card{
     margin: 10px;
+    min-width: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(128, 128, 128);
+}
+
+.card-header {
+    background-color: rgb(8, 255, 193);
+}
+
+.card-body {
+    background-color:rgb(242, 242, 242) ;
 }
