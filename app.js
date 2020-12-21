@@ -17,14 +17,17 @@ const writeToFile = require('./lib/writeToFile');
  
 //Storage array for employees
 const employees = [];
+//Counter for greeting
+let count = 0;
 
 //Initialization function 
 const init = async (employee, alt1, alt2) => {
     try{
-        //app greeting
-        await inquirer.prompt(greeting);
-        console.log('');
-        //questions for the user
+        //Prompt greeting but only on first iteration of recursive loop
+        count === 0 ? (await inquirer.prompt(greeting), console.log('')) : null;
+        count ++; 
+
+        //Questions for the user
         let data = await inquirer.prompt(questions(employee, alt1, alt2));
         
         //Push the employee objects to the employees array
@@ -42,7 +45,7 @@ const init = async (employee, alt1, alt2) => {
                 break;
         }
     
-        //update langue in questions depending on what role is selected
+        //Update langue in questions depending on what role is selected
         switch (data.others) {
             case 'Engineer':
             alt1 = 'github';
@@ -57,6 +60,8 @@ const init = async (employee, alt1, alt2) => {
        
         //Update employee variable & loop until the user is done. Then export the HTML file
         data.others !== `I'm done` ? (employee = data.others, init(employee, alt1, alt2)) : writeToFile(outputPath, render(employees));
+
+        
 
     }catch(err){
         console.log(err);
