@@ -11,6 +11,7 @@ const outputPath = path.join(OUTPUT_DIR, 'team.html');
 const render = require('./lib/htmlRenderer');
 const Employee = require('./lib/Employee');
 
+const greeting = require('./lib/greeting')
 const questions = require('./lib/questions');
 const writeToFile = require('./lib/writeToFile');
  
@@ -20,6 +21,10 @@ const employees = [];
 //Initialization function 
 const init = async (employee, alt1, alt2) => {
     try{
+        //app greeting
+        await inquirer.prompt(greeting);
+        console.log('');
+        //questions for the user
         let data = await inquirer.prompt(questions(employee, alt1, alt2));
         
         //Push the employee objects to the employees array
@@ -58,6 +63,6 @@ const init = async (employee, alt1, alt2) => {
     }
 }
 
-//initialize the app
+//Initialize the app
 init('Manager', 'officeNumber', 'office number');
 
