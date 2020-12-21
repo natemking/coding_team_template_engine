@@ -55,7 +55,7 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Babel plugin proposal class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
 
-* [Weather API from OpenWeatherMap](https://openweathermap.org/)
+* [text Outline CSS trick](https://stackoverflow.com/questions/57464935/font-outline-using-only-css)
 
 * [Get value of list item](https://stackoverflow.com/questions/5548827/get-value-of-list-item-with-jqueryp)
 

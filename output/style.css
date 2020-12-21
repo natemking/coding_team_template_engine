@@ -6,6 +6,10 @@ body{
 
 h1 {
     font-family: 'Marcellus SC', serif;
+    color: rgb(234, 234, 227);
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    font-size: calc(30px + 2vw);
+    
 }
 
 .employee-card{
