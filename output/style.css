@@ -26,3 +26,9 @@ h1 {
 .card-body {
     background-color:rgb(242, 242, 242) ;
 }
+
+@media (max-width: 767px) {
+    .rounded-pill{
+    border-radius: 0px !important;
+    } 
+}
