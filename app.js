@@ -1,19 +1,21 @@
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern');
+//Node modules
 const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
-
-const OUTPUT_DIR = path.resolve(__dirname, 'output');
+//Path variables
+const OUTPUT_DIR = path.resolve(__dirname, './output');
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
-
-const render = require('./lib/htmlRenderer');
-const Employee = require('./lib/Employee');
-
-const greeting = require('./lib/greeting')
-const questions = require('./lib/questions');
-const writeToFile = require('./lib/writeToFile');
+const LIB_PATH = path.resolve(__dirname, './lib');
+//Custom modules
+  //Classes
+const Manager = require(`${LIB_PATH}/Manager`);
+const Engineer = require(`${LIB_PATH}/Engineer`);
+const Intern = require(`${LIB_PATH}/Intern`);
+  //Functions
+const greeting = require(`${LIB_PATH}/greeting`)
+const questions = require(`${LIB_PATH}/questions`);
+const writeToFile = require(`${LIB_PATH}/writeToFile`);
+const render = require(`${LIB_PATH}/htmlRenderer`);
  
 //Storage array for employees
 const employees = [];
