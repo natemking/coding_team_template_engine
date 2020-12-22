@@ -15,19 +15,19 @@ http://www.natemking.dev/
 ## Table of Contents
  * [Description](#description)
     + [Scope of Work](#scope-of-work)
-    + [HTML and CSS](#html-and-css)
     + [Node.js functionality](#nodejs-functionality)
+    + [HTML and CSS](#html-and-css)
   * [Screenshots](#screenshots)
   * [Credits](#credits)
 
 ## Description
 
 ### Scope of Work
-
-### HTML and CSS
+The user is looking for a CLI app that they can use to add team members 
 
 ### Node.js Functionality
 
+### HTML and CSS
 
 ## Screenshots
 

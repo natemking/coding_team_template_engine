@@ -17,7 +17,7 @@ const questions = require(`${LIB_PATH}/questions`);
 const writeToFile = require(`${LIB_PATH}/writeToFile`);
 const render = require(`${LIB_PATH}/htmlRenderer`);
  
-//Storage array for employees
+//Storage array for employees add by user
 const employees = [];
 
 //Initialization function 
