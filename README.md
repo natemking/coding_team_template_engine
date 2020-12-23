@@ -8,6 +8,8 @@ Homework #10 OOP: Template Engine - Employee Summary
 ![bootstrap badge](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
 ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
 
+[App Demo Video](https://youtu.be/Gpe6iBm-T_4)
+
 ---
 
 ## Table of Contents
