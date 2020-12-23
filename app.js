@@ -5,17 +5,17 @@ const fs = require('fs');
 //Path variables
 const OUTPUT_DIR = path.resolve(__dirname, './output');
 const outputPath = path.join(OUTPUT_DIR, 'team.html');
-const LIB_PATH = path.resolve(__dirname, './lib');
+const LIB_DIR = path.resolve(__dirname, './lib');
 //Custom modules
   //Classes
-const Manager = require(`${LIB_PATH}/Manager`);
-const Engineer = require(`${LIB_PATH}/Engineer`);
-const Intern = require(`${LIB_PATH}/Intern`);
+const Manager = require(`${LIB_DIR}/Manager`);
+const Engineer = require(`${LIB_DIR}/Engineer`);
+const Intern = require(`${LIB_DIR}/Intern`);
   //Functions
-const greeting = require(`${LIB_PATH}/greeting`)
-const questions = require(`${LIB_PATH}/questions`);
-const writeToFile = require(`${LIB_PATH}/writeToFile`);
-const render = require(`${LIB_PATH}/htmlRenderer`);
+const greeting = require(`${LIB_DIR}/greeting`)
+const questions = require(`${LIB_DIR}/questions`);
+const writeToFile = require(`${LIB_DIR}/writeToFile`);
+const render = require(`${LIB_DIR}/htmlRenderer`);
  
 //Storage array for employees add by user
 const employees = [];
