@@ -8,8 +8,6 @@ Homework #10 OOP: Template Engine - Employee Summary
 ![bootstrap badge](https://img.shields.io/badge/bootstrap%20-%23563D7C.svg?&style=for-the-badge&logo=bootstrap&logoColor=white)
 ![node.js badge](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white)
 
-http://www.natemking.dev/
-
 ---
 
 ## Table of Contents
@@ -44,37 +42,28 @@ All of the HTML was pre-coded in the template files. The styling is provided via
 
 ## Screenshots
 
-<!-- <summary><strong>Weather Dashboard</strong></summary>
+![app walkt hrough](assets/images/screenshots/coding_team_template_engine.gif?raw=true)
+<br>
+_app walk through_
 <br>
 
-
-![weather dashboard functionality](./assets/images/screenshots/weather_dashboard.gif?raw=true)
+![team.html output](assets/images/screenshots/coding_team_template_engine_team_html.jpg?raw=true)
 <br>
-_weather dashboard functionality_
+_team.html output webpage_
 <br>
-
-![weather dashboard mobile](./assets/images/screenshots/weather_dashboard_mobile.jpg?raw=true)
-<br>
-_weather dashboard mobile aspect ratio_
-<br> -->
 
 
 ## License
 Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 ## Credits
-<!-- 
+
 * [JavaScript inheritance and the Prototype chain](https://ui.dev/javascript-inheritance-and-the-prototype-chain/)
 
 * [Babel plugin proposal class properties](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties)
 
 * [text Outline CSS trick](https://stackoverflow.com/questions/57464935/font-outline-using-only-css)
 
-* [Get value of list item](https://stackoverflow.com/questions/5548827/get-value-of-list-item-with-jqueryp)
-
 * [Get input field to accept only numbers](https://stackoverflow.com/questions/19508183/how-to-force-input-to-only-allow-alpha-letters)
 
-* [Converting from unix time](https://www.codegrepper.com/code-examples/delphi/jquery+convert+unix+timestamp+to+date)
-
-* [Check if obj has key in an if/else statement](https://stackoverflow.com/questions/455338/how-do-i-check-if-an-object-has-a-key-in-javascript) -->
 
