@@ -68,6 +68,10 @@ Licensed under the GNU GPLv3.0 License. Copyright © 2020
 
 * [Text Outline CSS trick](https://stackoverflow.com/questions/57464935/font-outline-using-only-css)
 
+---
 
+GitHub: [@natemking](https://github.com/natemking/)
+
+Email: [natmeking@gmail.com](mailto:natmeking@gmail.com)
 
 
